@@ -7,10 +7,18 @@ android {
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.rkenterprises.app"
+        applicationId 'com.rkenterprises.app'
         minSdk 23
         targetSdk 35
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
     }
 }
